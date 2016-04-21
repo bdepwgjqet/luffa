@@ -104,7 +104,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 HOME_PATH = os.path.abspath(os.path.dirname(__file__))
-THEME_NAME = 'bootstrap'
 STATIC_NAME = 'static'
-STATIC_PATH = os.path.join(HOME_PATH, STATIC_NAME, THEME_NAME)
 STATIC_URL = '/static/'
+THEME_NAME = 'bootstrap'
+STATIC_PATH = os.path.join(HOME_PATH, STATIC_NAME, THEME_NAME)
