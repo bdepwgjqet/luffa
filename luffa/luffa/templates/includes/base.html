@@ -3,10 +3,12 @@
 <head>
     <meta charset="utf-8">
     <title>{% block title %}{% endblock %}</title>
-    <link type="text/css" rel="stylesheet" href="/static/bower_components/bootstrap/dist/css/bootstrap.css"/>
-    <link type="text/css" rel="stylesheet" href="/static/udefine/css/udefine.css"/>
-    <script src="/static/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="/static/bower_components/jquery/dist/jquery.js"></script>
+
+    {% load staticfiles %}
+    <link type="text/css" rel="stylesheet" href="{% static "bower_components/bootstrap/dist/css/bootstrap.css" %}"/>
+    <link type="text/css" rel="stylesheet" href="{% static "udefine/css/udefine.css" %}"/>
+    <script src="{% static "bower_components/bootstrap/dist/js/bootstrap.js" %}"></script>
+    <script src="{% static "bower_components/jquery/dist/jquery.js" %}"></script>
 </head>
 <body>
     {% include "includes/nav.html" %}
